@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="./Dialog/css/index.css" />
+</head>
+
+<body>
+  1
+  <script type="module">
+    import { showDialog } from './Dialog/index.js'
+
+    showDialog({
+      message: '代码是写出来给人看的，附带能在机器上运行。'
+    }).then(() => {
+      console.log('success')
+    }).catch(() => {
+      console.log('cancel')
+    })
+  </script>
+</body>
+
+
+</html>
